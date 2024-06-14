@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <div class="input-area">
+                    <input type="text" name="city" placeholder="Enter city name" id="city-name">
+                    <button id="search"><img src="asset/search.svg" alt=""></button>
+                </div>
     
+                <ul class="city-name">
+                    <li><button class="city">Mumbai</button></li>
+                    <li><button class="city">Bengaluru</button></li>
+                    <li><button class="city">Kolkata</button></li>
+                    <li><button class="city">New Delhi</button></li>
+                </ul>
+            </div>
+
+            <div class="line"></div>
+            
+            <div class="side-bar-details">
+            <h1>Weather Details</h1>
+                <ul>
+                    <li>
+                        <span class="label">Cloudy</span>
+                        <span class="value" id="cloud">80%</span>
+                    </li>
+                    <li>
+                        <span class="label">Humidity</span>
+                        <span class="value" id="cloud">83%</span>
+                    </li>
+                    <li>
+                        <span class="label">Wind</span>
+                        <span class="value" id="cloud">17 km/h</span>
+                    </li>
+                    <li>
+                        <span class="label">Rain</span>
+                        <span class="value" id="cloud">6 mm</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-temp">
+            <div class="temp-area">
+                <span class="temp">21°</span>
+                <div class="location-time-box">
+                    <div class="location-box">
+                        <span id="location">London</span>
+                        <span id="country">(UK)</span>
+                    </div>
+                    <span id="time">05:09 Sunday, 6 Oct 24</span>
+                </div>
+                <div class="icon-box">
+                    <img src="asset/01d.svg" alt="">
+                    <span class="weather">Rainy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="detail-container">
+        
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
